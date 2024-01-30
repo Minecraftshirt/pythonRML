@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>Register Form</title>
+  <head>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdKsGApAAAAAIM5Y08JMVWEuGFTEDGUHnPHMyZK"></script>
+  <!-- Your code -->
+</head>
 </head>
 <style>
   
@@ -52,6 +56,14 @@ button:hover{
    <tr
     </td>
    </tr>
+    <script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LdKsGApAAAAAIM5Y08JMVWEuGFTEDGUHnPHMyZK', {action: 'LOGIN'});
+    });
+  }
+</script>
    <tr>
     <td><input type="submit" value="Submit" size="40px" onclick="alert('visit : https://minecraftshirt.github.io/pythonRMC/')"></td>
    </tr>
