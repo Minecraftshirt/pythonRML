@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdnsGApAAAAAGi9Alk64KsOquE2ks0kXLg4qQkp"></script>
+  <title>Register Form</title>
+  <script async src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<style>
+  
+*{
+    margin: 0;
+    padding: 0;
+
+}
+button{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    color:grey;
+    border: 2px solid whitesmoke;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: transparent;
+    color: grey;
+}
+
+</style>
+<center>
+<body background="pexels-pixabay-531880.jpg" style="color: black; font-size: 50px;" style="font-family:font-family:Leckerli One"></body>
+ 
+  <p style="font-family:Leckerli One;">If button not working please refresh</p>
+ <form onsubmit="return myFunc()"><center>
+  <script>
+function myFunc(){
+  event.preventDefault();
+Console.log("good job")
+}
+
+
+  </script>
+
+<div>
+
+<label></label>Full Name</label>
+<input type="text" required />
+<br>
+<label ></label>Age</label>
+<input type="number" required />
+<br>
+<label></label>Email</label>
+<input type="email" required />
+<br>
+<a href="https://minecraftshirt.github.io/pythonRMC/">
+  <input type="submit" value="Login" style="height:50px; width:350px" style="font-family:Leckerli One;"  style="font-size:100px;" style="color: darkblue;">
+</a>
+  <script>
+    function example(){
+        alert('test')
+    }
+</script>
+<script>
+    var form = document.getElementById('div')
+
+    div.addEventListener('submit',function(event){
+      event.preventDefault()
+    }
+    
+  </script>
+
+  <!--"alert ('Scroll to click a button')-->
+
+  <!--'visit : https://minecraftshirt.github.io/pythonRMC/')"-->
+</center>
+ </div>
+ </form>
+</script>
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LdnsGApAAAAAGi9Alk64KsOquE2ks0kXLg4qQkp', {action: 'LOGIN'});
+    });
+  }
+</script>
+</center>
+</body>
+</html>
